@@ -5,3 +5,133 @@ body {
   font-size: $default-font-size;
   direction: rtl;
 }
+
+.modal-header {
+  padding-bottom: 31px;
+  .close {
+    float: right;
+  }
+  padding-bottom: 10px;
+}
+
+.modal-title {
+  margin-right: 20px;
+}
+
+.login-content {
+  border-left: 1px dashed #C5C5C5;
+}
+
+.modal-body.tour-details-body > div {
+  padding: 10px 0;
+  border-bottom: 1px dashed #B3AEAE;
+}
+
+.agency-info div {
+  margin-bottom: 3px;
+  i {
+    display: inline-block;
+    padding: 5px 10px 6px;
+    background-color: #678ED0;
+    color: white;
+  }
+  span {
+    background: #E0E0E0;
+    padding: 3px 10px;
+    min-width: 80%;
+    max-width: 80%;
+    display: inline-block;
+  }
+}
+
+.navbar-default {
+  border-radius: 0;
+  margin-bottom: 0;
+  border-color: #4B6AA2;
+  background-color: #4B6AA2;
+  .navbar-nav > {
+    li > a {
+      color: white;
+      &:focus, &:hover {
+        color: #C7D8F7;
+        background-color: transparent;
+      }
+    }
+    .active > a {
+      color: #FFF;
+      background-color: #749DE4;
+      &:focus, &:hover {
+        color: #FFF;
+        background-color: #749DE4;
+      }
+    }
+  }
+  .badge {
+    background-color: #D41010;
+  }
+}
+
+.search-bar {
+  padding: 20px 0;
+  background: #FFF;
+  border: 1px solid #D6D6D6;
+  border-left: 0;
+  border-right: 0;
+}
+
+@media (min-width: 992px) {
+  .create-tour-sidebar.col-md-2 {
+    margin-left: 1%;
+    width: 15%;
+  }
+  .search-sidebar.col-md-3 {
+    margin-left: 1%;
+    width: 24%;
+  }
+}
+
+.font-size-10 {
+  font-size: 10px;
+}
+
+.font-size-11 {
+  font-size: 11px;
+}
+
+.call-with-me-button {
+  opacity: 0;
+  &.active {
+    opacity: 1;
+  }
+}
+
+.search-result tr:hover {
+  .call-with-me-button {
+    opacity: 1;
+  }
+  background: #D8E6DF !important;
+  box-shadow: 8px 6px 4px black !important;
+  cursor: pointer;
+}
+
+.create-tour-sidebar {
+  padding: 0;
+  .nav-pills > li > a {
+    border-radius: 0;
+  }
+}
+
+.create-tour-form {
+  padding: 20px 0;
+  > div {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #EAEAEA;
+    padding-bottom: 20px;
+  }
+}
+
+.create-tour-sidebar, .create-tour-form, .search-sidebar, .search-result {
+  background: white;
+  border-radius: 5px;
+  border: 1px solid #D6D6D6;
+}
