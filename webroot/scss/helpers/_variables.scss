@@ -26,8 +26,7 @@ $font-size-h6:            ceil(($font-size-base * 0.85)); // ~12px
 //------------------------------------------
 /// My variables
 $font-iransans : $spider-font-directory + 'iransans/IRANSans';
-$font-iransans-bold : $spider-font-directory + 'iransans/IRANSans-Bold';
-$default-font-size : 16px;
+$default-font-size : 14px;
 $bottom-border-color:#e7e7e7;
 $color-red:darken($btn-danger-bg, 10%);
 $search-record-sub-title-color: #9A9A9A;

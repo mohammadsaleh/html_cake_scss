@@ -26,7 +26,8 @@
 
   $formats: (
           otf: "opentype",
-          ttf: "truetype"
+          ttf: "truetype",
+          eot: "embedded-opentype"
   );
 
   @each $ext in $exts {
@@ -42,7 +43,20 @@
     src: $src;
   }
 }
-
+@mixin iransans() {
+  $posfixes : '', '-Light', '-Bold', '-Medium', '-UltraLight' ;
+  $styles : (
+      '': ('style': normal, 'weight': normal),
+      '-Light': ('style': normal, 'weight': 100),
+      '-Bold': ('style': normal, 'weight': bold),
+      '-Medium': ('style': normal, 'weight': 600),
+      '-UltraLight': ('style': normal, 'weight': 100),
+  );
+  @each $posfix in $posfixes {
+    $fontFileName : $font-iransans + $posfix + '-web';
+    @include font-face('iransans', $fontFileName, map-get(map-get($styles, $posfix), 'weight'), map-get(map-get($styles, $posfix), 'style'), eot ttf woff woff2);
+  }
+}
 // =============================================================================
 // Background image
 // =============================================================================

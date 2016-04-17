@@ -1,8 +1,9 @@
 @import "bootstrap-rtl.min.scss";
 @import "../helpers/mixins";
 @import "../helpers/variables";
-@include font-face('iransans', $font-iransans, null, null, eof svg ttf woff woff2);
-@include font-face('iransans-bold', $font-iransans-bold, null, null, eof svg ttf woff woff2);
+
+@include iransans();
+
 button:focus,
 a:focus{
   outline: none !important;
