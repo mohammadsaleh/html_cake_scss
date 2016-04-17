@@ -1,0 +1,29 @@
+@import "bootstrap-rtl.min.scss";
+@import "../helpers/mixins";
+@import "../helpers/variables";
+@include font-face('iransans', $font-iransans, null, null, eof svg ttf woff woff2);
+@include font-face('iransans-bold', $font-iransans-bold, null, null, eof svg ttf woff woff2);
+button:focus,
+a:focus{
+  outline: none !important;
+}
+a:hover{
+  text-decoration: none;
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+}

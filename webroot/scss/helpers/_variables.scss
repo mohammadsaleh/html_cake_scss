@@ -1,0 +1,36 @@
+$spider-font-directory: '../fonts/';
+$spider-img-directory: '../img/';
+
+//------------------------------------------
+/// overwrite variables
+$icon-font-path : $spider-font-directory + 'glyphicons/';
+$fa-font-path: $spider-font-directory + 'awesome/';
+$btn-danger-bg : #E24648;
+$btn-danger-border : darken(#E24648, 3%);
+$state-danger-text : #D84E55;
+$input-border:#C4C4C4;
+$input-border-radius:0;
+$input-color:#333;
+/* grid padding */
+$grid-gutter-width: 0px;
+
+$font-size-base:          14px;
+$font-size-h1:            floor(($font-size-base * 2.6)); // ~36px
+$font-size-h2:            floor(($font-size-base * 2.15)); // ~30px
+$font-size-h3:            ceil(($font-size-base * 1.7)); // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.25)); // ~18px
+$font-size-h5:            $font-size-base;
+$font-size-h6:            ceil(($font-size-base * 0.85)); // ~12px
+//------------------------------------------
+
+//------------------------------------------
+/// My variables
+$font-iransans : $spider-font-directory + 'iransans/IRANSans';
+$font-iransans-bold : $spider-font-directory + 'iransans/IRANSans-Bold';
+$default-font-size : 16px;
+$bottom-border-color:#e7e7e7;
+$color-red:darken($btn-danger-bg, 10%);
+$search-record-sub-title-color: #9A9A9A;
+$switch-input-position : 320;
+$dark-red-color : #D54E4E;
+//------------------------------------------
