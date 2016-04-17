@@ -1,2 +1,3 @@
 sass --watch --sourcemap=none --style [expanded/compact/compressed] scss:css
 sass --watch --sourcemap=none --style compressed scss:css
+sass --watch --sourcemap=none --style compressed scss/pages:css
